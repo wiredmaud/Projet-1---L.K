@@ -1,16 +1,20 @@
-const clickLouise = document.getElementById('linkToLouise');
-const clickKarine = document.getElementById('linkToKarine');
+const clickLouise = document.querySelector('#buttonLouise');
+const clickKarine = document.querySelector('#buttonKarine');
 
-const displayLouise = document.getElementById('displayLouiseNone');
-const displayKarine = document.getElementsByClassName('displayKarineNone');
+const displayLouise = document.querySelector('.displayLouiseNone');
+const displayKarine = document.querySelector('.displayKarineNone');
+const paragraphPresentation = document.querySelector('.presentation');
+/*All CLEAR with console!*/
+console.log(paragraphPresentation);
 
-console.log(displayLouise);
-console.log(displayLouise);
-console.log(displayKarine);
+clickLouise.addEventListener("click", function (event) {
+    event.preventDefault();
+    displayLouise.classList.toggle("displayLouiseFlex");
+    paragraphPresentation.classList.toggle("presentationDisplayNone");
+});
 
-// clickLouise.addEventListener = ('click', function(event){
-//   event.preventDefault();
-//   if(displayLouise = true) {
-//     displayLouise.style.display = 'block';
-//     displayKarine.style.display = 'none';
-//   }})
+clickKarine.addEventListener("click", function (event) {
+    event.preventDefault();
+    displayKarine.classList.toggle('displayKarineFlex');
+    paragraphPresentation.classList.toggle("presentationDisplayNone");
+});

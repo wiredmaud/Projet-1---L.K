@@ -7,7 +7,7 @@
     --font-size: 20px;
     --line-height: 2;
     --margin: 2vh;
-    --linkPadding: 5px;
+    --buttonPadding: 3vw;
     --padding: 42px 0px 42px 0px;
     --border-radius: 10%;
 }
@@ -33,14 +33,14 @@ body {
     width: 8vw;
 }
 
-ul {
+#logoAnimation {
     display: flex;
     justify-content: space-around;
     height: 100%;
     width: 100%;
 }
 
-ul li {
+#logoAnimation li {
     z-index: -1;
     display: flex;
     justify-content: space-between;
@@ -84,12 +84,17 @@ ul li:nth-child(2) {
 
 #contentWithoutParallax {
     background-color: var(--color-palette1);
-    padding-top: 40px;
+    padding: var(--padding);
     line-height: calc(var(--line-height)*2);
 }
 
-#presentation {
+.presentation {
     margin-bottom: 3vh;
+    display: flex;
+}
+
+.presentationDisplayNone {
+    display: none;
 }
 
 h1,
@@ -112,39 +117,45 @@ p {
     justify-content: space-evenly;
 }
 
+button {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--buttonPadding);
+}
+
 a {
     text-decoration: none;
     margin-bottom: var(--margin);
 }
 
-#linkToLouise img,
-#linkToKarine img {
+#buttonLouise img,
+#buttonKarine img {
     width: 20vw;
 }
 
-#linkToLouise,
-#linkToKarine {
-    padding: 0px 3vw 0px 3vw;
-    border-radius: var(--border-radius);
-}
-
-#linkToLouise {
+#buttonLouise {
     background-color: var(--color-palette2);
 }
 
-#linkToKarine {
+#buttonKarine {
     background-color: var(--color-palette3);
 }
 
-#displayLouiseNone,
-#displayKarineNone {
-    padding: var(--padding);
+.displayLouiseNone {
     display: none;
 }
 
-#displayLouiseFlex,
-#displayKarineFlex {
-    padding: var(--padding);
+.displayKarineNone {
+    display: none;
+}
+
+.displayLouiseFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.displayKarineFlex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +165,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: var(--padding);
 }
 
 .flexRowHero {
@@ -161,6 +173,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 .displayHeroTitle img {
     width: 42vw;
@@ -206,15 +219,19 @@ a {
         background-size: 40vw;
     }
 
-    #linkToLouise img,
-    #linkToKarine img {
+    button {
+        border: none;
+        border-radius: var(--border-radius);
+    }
+
+    #buttonLouise img,
+    #buttonKarine img {
         width: 7vw;
     }
 
-    #linkToLouise,
-    #linkToKarine {
-        padding: 0px 3vw 0px 3vw;
-        border-radius: calc(var(--border-radius)/2);
+    #buttonLouise,
+    #buttonKarine {
+        border-radius: calc(var(--border-radius)/1.5);
     }
 
     .displayHeroTitle img {
