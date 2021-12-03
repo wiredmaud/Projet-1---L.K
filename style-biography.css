@@ -1,0 +1,229 @@
+:root {
+    --color-palette1: rgb(49, 36, 83);
+    --color-palette2: rgb(1, 100, 122);
+    --color-palette3: rgb(140, 3, 41);
+    --color-palette4: rgb(255, 255, 255);
+    --font-main: Lato, sans-serif;
+    --font-size: 20px;
+    --line-height: 2;
+    --margin: 2vh;
+    --linkPadding: 5px;
+    --padding: 42px 0px 42px 0px;
+    --border-radius: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: var(--color-palette4);
+    font-family: var(--font-main);
+    text-decoration: none;
+}
+
+/*Stars animation*/
+.star {
+    width: 8vw;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+ul li {
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: grow 3.3s ease-in-out infinite;
+}
+
+@keyframes grow {
+
+    0%,
+    50%,
+    100% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+ul li:nth-child(1) {
+    animation-delay: -1s;
+    position: fixed;
+    top: 7%;
+    left: 12%;
+}
+
+ul li:nth-child(2) {
+    animation-delay: -1.9s;
+    position: fixed;
+    top: 20%;
+    right: 10%;
+}
+
+#titleLogoParallax {
+    background: url(/assets/Title.png) no-repeat fixed;
+    height: 70vw;
+    background-position-y: 4vh;
+    background-size: contain;
+}
+
+#contentWithoutParallax {
+    background-color: var(--color-palette1);
+    padding-top: 40px;
+    line-height: calc(var(--line-height)*2);
+}
+
+#presentation {
+    margin-bottom: 3vh;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    text-align: center;
+}
+
+p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#flexLinkHeroes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: var(--margin);
+}
+
+#linkToLouise img,
+#linkToKarine img {
+    width: 20vw;
+}
+
+#linkToLouise,
+#linkToKarine {
+    padding: 0px 3vw 0px 3vw;
+    border-radius: var(--border-radius);
+}
+
+#linkToLouise {
+    background-color: var(--color-palette2);
+}
+
+#linkToKarine {
+    background-color: var(--color-palette3);
+}
+
+#displayLouiseNone,
+#displayKarineNone {
+    padding: var(--padding);
+    display: none;
+}
+
+#displayLouiseFlex,
+#displayKarineFlex {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.displayHeroTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexRowHero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.displayHeroTitle img {
+    width: 42vw;
+}
+
+/*Appear JS avec un fade + delay lorsque le personnage est sélectionné */
+.heroComment {
+    display: none;
+}
+
+.heroPicture {
+    width: 20vw;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+/*Add Animations*/
+
+@media screen and (min-width: 600px) {
+    .star {
+        width: 8vh;
+    }
+
+    ul li:nth-child(1) {
+        position: fixed;
+        top: 8%;
+        left: 30vw;
+    }
+
+    ul li:nth-child(2) {
+        position: fixed;
+        top: 20%;
+        right: 30vw;
+    }
+
+    #titleLogoParallax {
+        background: url(/assets/Title.png) no-repeat fixed;
+        height: 30vw;
+        background-position-y: 5vh;
+        background-position-x: 50%;
+        background-size: 40vw;
+    }
+
+    #linkToLouise img,
+    #linkToKarine img {
+        width: 7vw;
+    }
+
+    #linkToLouise,
+    #linkToKarine {
+        padding: 0px 3vw 0px 3vw;
+        border-radius: calc(var(--border-radius)/2);
+    }
+
+    .displayHeroTitle img {
+        width: 20vw;
+    }
+
+    .heroPicture {
+        width: 15vw;
+        padding: 2vw;
+    }
+
+}

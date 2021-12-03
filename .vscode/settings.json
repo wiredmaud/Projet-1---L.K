@@ -1,0 +1,16 @@
+{
+    "spellright.language": [
+        "en",
+        "fr"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html",
+        "javascript"
+    ],
+    "cSpell.words": [
+        "transmettrice"
+    ]
+}
