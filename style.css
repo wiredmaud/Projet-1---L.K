@@ -25,21 +25,42 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    display: inline-block;
+#HeaderBoxLouise {
     padding: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-palette1);
+}
+
+#HeaderBoxLouise img {
+    width: auto;
+    height: 10vh;
+    padding: 10px;
+}
+
+#HeaderBoxKarine {
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-palette3);
+}
+
+#HeaderBoxKarine img {
+    width: auto;
+    height: 10vh;
+    padding: 10px;
 }
 
 #SkillBoxLouise {
-    display: flex;
-    justify-content: space-between;
     font-size: 15px;
     width: 95%;
     height: auto;
     margin: auto;
-    background-color: #fff;
+    background-color: #00072E;
     border: 5px solid #cdcdcd;
     padding: 0px;
     border-radius: 20px;
@@ -54,7 +75,7 @@ h1 {
     width: 95%;
     height: auto;
     margin: auto;
-    background-color: #fff;
+    background-color: #8C0329;
     border: 5px solid #cdcdcd;
     padding: 0px;
     border-radius: 20px;
@@ -64,29 +85,16 @@ h1 {
     -moz-border-radius: 20px;
 }
 
-#SkillBoxLouise img {
-    width: auto;
-    height: 10vh;
-    padding: 10px;
-    position: absolute;
-    /*right: 40px;*/
-}
-
-#SkillBoxKarine img {
-    width: auto;
-    height: 10vh;
-    padding: 10px;
-    position: absolute;
-    right: 40px;
-}
-
 .SkillBar {
     width: 90%;
     height: 30px;
     position: relative;
-    background: rgba(17, 17, 17, 0.589);
+    background: #cdcdcd;
     margin: 20px auto;
-    border-radius: 20px;
+    border-radius: 15px;
+    background: #babfc2;
+    box-shadow: inset 7px 7px 7px #3d3e3f,
+        inset -7px -7px 7px #8a8d8d;
 
 }
 
@@ -99,9 +107,9 @@ h1 {
     height: 30px;
     position: absolute;
     border-radius: 15px;
-    background: #01647a;
-    box-shadow: inset -7px 7px 14px #013642,
-        inset 7px -7px 14px #0192b2;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
 }
 
 @keyframes Animate-HTML {
@@ -153,9 +161,9 @@ h1 {
     height: 30px;
     position: absolute;
     border-radius: 15px;
-    background: #01647a;
-    box-shadow: inset -7px 7px 14px #013642,
-        inset 7px -7px 14px #0192b2;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
 }
 
 @keyframes Animate-CSS {
@@ -207,9 +215,9 @@ h1 {
     height: 30px;
     position: absolute;
     border-radius: 15px;
-    background: #01647a;
-    box-shadow: inset -7px 7px 14px #013642,
-        inset 7px -7px 14px #0192b2;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
 }
 
 @keyframes Animate-jQuery {
@@ -261,9 +269,9 @@ h1 {
     height: 30px;
     position: absolute;
     border-radius: 15px;
-    background: #01647a;
-    box-shadow: inset -7px 7px 14px #013642,
-        inset 7px -7px 14px #0192b2;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
 }
 
 @keyframes Animate-JS {
@@ -315,9 +323,9 @@ h1 {
     height: 30px;
     position: absolute;
     border-radius: 15px;
-    background: #01647a;
-    box-shadow: inset -7px 7px 14px #013642,
-        inset 7px -7px 14px #0192b2;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
 }
 
 @keyframes Animate-XML {
