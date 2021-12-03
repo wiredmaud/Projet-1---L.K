@@ -1,9 +1,10 @@
 const clickLouise = document.getElementById('linkToLouise');
 const clickKarine = document.getElementById('linkToKarine');
 
-const displayLouise = document.getElementById('displayLouise');
-const displayKarine = document.getElementsByClassName('displayKarine');
+const displayLouise = document.getElementById('displayLouiseNone');
+const displayKarine = document.getElementsByClassName('displayKarineNone');
 
+console.log(displayLouise);
 console.log(displayLouise);
 console.log(displayKarine);
 
