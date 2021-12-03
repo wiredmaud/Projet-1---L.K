@@ -20,7 +20,7 @@
 /* Partie concernant les barres d'XP*/
 
 body {
-    background: #E9E5E2;
+    background-color: var(--color-palette4);
     margin: 2%;
     font-family: 'Lato', sans-serif;
 }
@@ -371,7 +371,7 @@ body {
 .Skill-Area {
     z-index: 1;
     float: left;
-    //position: absolute;
+    position: absolute;
     margin-top: 7px;
     margin-left: 15px;
     text-shadow: none;
