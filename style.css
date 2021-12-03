@@ -1,0 +1,393 @@
+:root {
+    --color-palette1: rgb(49, 36, 83);
+    --color-palette2: rgb(1, 100, 122);
+    --color-palette3: rgb(140, 3, 41);
+    --color-palette4: rgb(255, 255, 255);
+    --font-main: Lato, sans-serif;
+    --font-size: 20px;
+    --line-height: 2;
+    --margin: 2vh;
+    --linkPadding: 5px;
+    --padding: 42px 0px 42px 0px;
+    --border-radius: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Partie concernant les barres d'XP*/
+
+body {
+    background: #E9E5E2;
+    margin: 2%;
+    font-family: 'Lato', sans-serif;
+}
+
+#HeaderBoxLouise {
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-palette1);
+}
+
+#HeaderBoxLouise img {
+    width: auto;
+    height: 10vh;
+    padding: 10px;
+}
+
+#HeaderBoxKarine {
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-palette3);
+}
+
+#HeaderBoxKarine img {
+    width: auto;
+    height: 10vh;
+    padding: 10px;
+}
+
+#SkillBoxLouise {
+    font-size: 15px;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: #00072E;
+    border: 5px solid #cdcdcd;
+    padding: 0px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+#SkillBoxKarine {
+    font-size: 15px;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: #8C0329;
+    border: 5px solid #cdcdcd;
+    padding: 0px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.SkillBar {
+    width: 90%;
+    height: 30px;
+    position: relative;
+    background: #cdcdcd;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: #babfc2;
+    box-shadow: inset 7px 7px 7px #3d3e3f,
+        inset -7px -7px 7px #8a8d8d;
+
+}
+
+#Skill-HTML {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 40%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-webkit-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-moz-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-o-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 65%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+@-webkit-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+@-moz-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+@-o-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+#Skill-XML {
+    animation: Animate-XML 4s;
+    -webkit-animation: Animate-XML 4s;
+    -moz-animation: Animate-XML 4s;
+    -o-animation: Animate-XML 4s;
+    width: 40%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-webkit-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-moz-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+@-o-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 7px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* fin de la partie concernant les barres d'XP*/
