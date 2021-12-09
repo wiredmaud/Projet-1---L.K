@@ -17,72 +17,121 @@
     padding: 0;
 }
 
-/* Partie concernant les barres d'XP*/
-
 body {
     background-color: var(--color-palette4);
     margin: 2%;
     font-family: 'Lato', sans-serif;
 }
 
-#HeaderBoxLouise {
-    padding: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    color: var(--color-palette1);
-}
-
-#HeaderBoxLouise img {
+.nav-logo-container img {
     width: auto;
-    height: 10vh;
-    padding: 10px;
+    margin-bottom: 10%;
+} 
+
+#LOUISE, #KARINE {
+    width: auto;
+
 }
 
+#HeaderBoxLouise,
 #HeaderBoxKarine {
-    padding: 20px;
+    /* padding-top: 20px;
+    padding-left: 20px; */
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
-    color: var(--color-palette3);
-}
-
-#HeaderBoxKarine img {
-    width: auto;
+    justify-content:space-between;
     height: 10vh;
     padding: 10px;
+}
+
+#ImageHeroLouise {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.imglouise {
+    height: 100px;
+    position: absolute;
+    z-index: 20;
+}
+
+.logocircle {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotation 10s linear infinite;
+    -moz-animation: rotation 10s linear infinite;
+    -ms-animation: rotation 10s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes rotation {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+#ImageHeroKarine {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.imgkarine {
+    height: 100px;
+    position: absolute;
+    z-index: 20;
+}
+
+#SkillBoxLouise,
+#SkillBoxKarine {
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    margin: 0% 20px 20px 20px;
+    border: 5px solid #cdcdcd;
+    padding: 20px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
 }
 
 #SkillBoxLouise {
-    font-size: 15px;
-    width: 95%;
-    height: auto;
-    margin: auto;
-    background-color: #00072E;
-    border: 5px solid #cdcdcd;
-    padding: 0px;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -moz-border-radius: 20px;
+    background-color: var(--color-palette1);
 }
 
 #SkillBoxKarine {
-    font-size: 15px;
-    width: 95%;
-    height: auto;
-    margin: auto;
-    background-color: #8C0329;
-    border: 5px solid #cdcdcd;
-    padding: 0px;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -moz-border-radius: 20px;
+    background-color: var(--color-palette3);
 }
 
 .SkillBar {
@@ -98,12 +147,12 @@ body {
 
 }
 
-#Skill-HTML {
+#Skill-100 {
     width: 100%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    animation: Animate-HTML 3s;
+    -webkit-animation: Animate-HTML 3s;
+    -moz-animation: Animate-HTML 3s;
+    -o-animation: Animate-HTML 3s;
     height: 30px;
     position: absolute;
     border-radius: 15px;
@@ -151,12 +200,118 @@ body {
         width: 100%
     }
 }
+#Skill-90 {
+    width: 90%;
+    animation: Animate-HTML 3s;
+    -webkit-animation: Animate-HTML 3s;
+    -moz-animation: Animate-HTML 3s;
+    -o-animation: Animate-HTML 3s;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
 
-#Skill-CSS {
-    animation: Animate-CSS 5s;
-    -webkit-animation: Animate-CSS 5s;
-    -moz-animation: Animate-CSS 5s;
-    -o-animation: Animate-CSS 5s;
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+#Skill-80 {
+    animation: Animate-CSS 3s;
+    -webkit-animation: Animate-CSS 3s;
+    -moz-animation: Animate-CSS 3s;
+    -o-animation: Animate-CSS 3s;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+#Skill-70 {
+    animation: Animate-CSS 3s;
+    -webkit-animation: Animate-CSS 3s;
+    -moz-animation: Animate-CSS 3s;
+    -o-animation: Animate-CSS 3s;
     width: 70%;
     height: 30px;
     position: absolute;
@@ -206,12 +361,12 @@ body {
     }
 }
 
-#Skill-jQuery {
-    animation: Animate-jQuery 5s;
-    -webkit-animation: Animate-jQuery 5s;
-    -moz-animation: Animate-jQuery 5s;
-    -o-animation: Animate-jQuery 5s;
-    width: 40%;
+#Skill-60 {
+    animation: Animate-jQuery 3s;
+    -webkit-animation: Animate-jQuery 3s;
+    -moz-animation: Animate-jQuery 3s;
+    -o-animation: Animate-jQuery 3s;
+    width: 60%;
     height: 30px;
     position: absolute;
     border-radius: 15px;
@@ -226,7 +381,7 @@ body {
     }
 
     to {
-        width: 40%
+        width: 60%
     }
 }
 
@@ -236,7 +391,7 @@ body {
     }
 
     to {
-        width: 40%
+        width: 60%
     }
 }
 
@@ -246,7 +401,7 @@ body {
     }
 
     to {
-        width: 40%
+        width: 60%
     }
 }
 
@@ -256,115 +411,7 @@ body {
     }
 
     to {
-        width: 40%
-    }
-}
-
-#Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 65%;
-    height: 30px;
-    position: absolute;
-    border-radius: 15px;
-    background: #1b444d;
-    box-shadow: inset -7px 7px 14px #219fbb,
-        inset 7px -7px 14px #035a6d;
-}
-
-@keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 65%
-    }
-}
-
-@-webkit-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 65%
-    }
-}
-
-@-moz-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 65%
-    }
-}
-
-@-o-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 65%
-    }
-}
-
-#Skill-XML {
-    animation: Animate-XML 4s;
-    -webkit-animation: Animate-XML 4s;
-    -moz-animation: Animate-XML 4s;
-    -o-animation: Animate-XML 4s;
-    width: 40%;
-    height: 30px;
-    position: absolute;
-    border-radius: 15px;
-    background: #1b444d;
-    box-shadow: inset -7px 7px 14px #219fbb,
-        inset 7px -7px 14px #035a6d;
-}
-
-@keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 40%
-    }
-}
-
-@-webkit-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 40%
-    }
-}
-
-@-moz-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 40%
-    }
-}
-
-@-o-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-
-    to {
-        width: 40%
+        width: 60%
     }
 }
 
@@ -390,4 +437,36 @@ body {
     font-size: 14px;
 }
 
-/* fin de la partie concernant les barres d'XP*/
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: var(--color-palette4);
+        margin: 2%;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .nav-logo-container img {
+        width: auto;
+        margin-bottom: 40%;
+    } 
+    
+    #LOUISE, #KARINE {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    #HeaderBoxLouise,
+    #HeaderBoxKarine {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* display: flex;
+        justify-content:space-around; */
+        height: 10vh;
+        padding: 10px;
+    }
+    
+}
