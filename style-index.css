@@ -1,19 +1,17 @@
 :root {
-    --color-palette1: rgb(49, 36, 83);
+    --total-width-mobile: 80vw;
+    --color-palette1: rgb(18, 11, 25);
     --color-palette2: rgb(1, 100, 122);
     --color-palette3: rgb(140, 3, 41);
     --color-palette4: rgb(255, 255, 255);
-    --font-main: Lato, sans-serif;
+    --font-main: "Lato", sans-serif;
     --font-size: 20px;
-    --line-height: 2;
+    --line-height: 2vh;
     --margin: 2vh;
-    --buttonPadding: 3vw;
-    --padding: 42px 0px 42px 0px;
-    --border-radius: 10%;
-}
-
-html {
-    scroll-behavior: smooth;
+    --main-element-padding: 3vw;
+    --margin-y: 2vh 0px 2vh 0px;
+    --centering-element-x: 0vh auto 5vh auto;
+    --border-radius: 10px;
 }
 
 * {
@@ -23,12 +21,25 @@ html {
 }
 
 body {
-    color: var(--color-palette4);
     font-family: var(--font-main);
+    color: var(--color-palette4);
     text-decoration: none;
+    z-index: 2;
 }
 
-/*Stars animation*/
+.wrapper {
+    width: 100%;
+}
+
+#LogoParallax {
+    background: url(/assets/Title.png) no-repeat fixed;
+    z-index: -1;
+    height: 70vw;
+    background-position-y: 4vh;
+    background-size: contain;
+}
+
+/*Stars animation begins*/
 .star {
     width: 8vw;
 }
@@ -37,205 +48,221 @@ body {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    width: 100%;
+    width: var(--total-width-mobile);
 }
 
 #logoAnimation li {
-    z-index: -1;
+    z-index: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: grow 3.3s ease-in-out infinite;
+    animation: grow 3.3s linear infinite;
 }
 
 @keyframes grow {
-
     0%,
     50%,
     100% {
-        transform: scale(0.5);
+        transform: scale(0.8);
     }
 
     50% {
         transform: scale(1);
     }
 }
+/*Stars animation stops*/
 
-ul li:nth-child(1) {
+#logoAnimation li:nth-child(1) {
     animation-delay: -1s;
     position: fixed;
     top: 7%;
     left: 12%;
 }
 
-ul li:nth-child(2) {
+#logoAnimation li:nth-child(2) {
     animation-delay: -1.9s;
     position: fixed;
     top: 20%;
     right: 10%;
 }
 
-#titleLogoParallax {
-    background: url(/assets/Title.png) no-repeat fixed;
-    height: 70vw;
-    background-position-y: 4vh;
-    background-size: contain;
-}
+/*Stars animation stops*/
 
 #contentWithoutParallax {
+    background: transparent;
+}
+
+.cardHero {
     background-color: var(--color-palette1);
-    padding: var(--padding);
-    line-height: calc(var(--line-height)*2);
-}
-
-.presentation {
-    margin-bottom: 3vh;
+    width: var(--total-width-mobile);
     display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    margin: var(--centering-element-x);
+    padding-bottom: 5vh;
+    transition: scale 0.3s ease-in;
 }
 
-.presentationDisplayNone {
+.cardHero img {
+    filter: drop-shadow(5px 10px 5px rgb(25, 19, 43, 0.5));
+}
+
+p {
+    text-align: center;
+}
+
+.juxtaposition {
+    display: flex;
+    height: 350px;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.heroPicture {
+    width: 95vw;
+    transform: translate(0%, -5%);
+    z-index: 1;
+}
+
+.placeCircles {
+    transform: translate(0%, -105%);
+}
+
+.heroPictureCircles {
+    width: 90vw;
+    z-index: 0;
+    animation: spin 60s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heroPresentationNone {
     display: none;
 }
 
-h1,
-h2,
-h3,
-p,
-a {
+.heroPresentationFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 60px;
     text-align: center;
 }
 
 p {
     font-size: var(--font-size);
-    line-height: var(--line-height);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    line-height: calc(var(--line-height)*2);
+    width: 70vw;
+    margin: 0vh auto 0vh auto;
 }
 
-#flexLinkHeroes {
-    display: flex;
-    justify-content: space-evenly;
+.heroComment {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 button {
+    z-index: 1;
+    width: 100%;
     border: none;
-    border-radius: var(--border-radius);
-    padding: var(--buttonPadding);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--main-element-padding);
 }
 
-a {
-    text-decoration: none;
-    margin-bottom: var(--margin);
+#buttonLouise {
+    background: linear-gradient(190deg, rgb(140, 3, 41, 0.3),
+            rgb(1, 100, 122, 1),
+            rgb(1, 100, 122, 1),
+            rgb(140, 3, 41, 0.3));
+}
+
+#buttonKarine {
+    background: linear-gradient(190deg, rgb(1, 100, 122, 0.3),
+            rgb(140, 3, 41, 1),
+            rgb(140, 3, 41, 1),
+            rgb(1, 100, 122, 0.4));
 }
 
 #buttonLouise img,
 #buttonKarine img {
-    width: 20vw;
-}
-
-#buttonLouise {
-    background-color: var(--color-palette2);
-}
-
-#buttonKarine {
-    background-color: var(--color-palette3);
-}
-
-.displayLouiseNone {
-    display: none;
-}
-
-.displayKarineNone {
-    display: none;
-}
-
-.displayLouiseFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.displayKarineFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.displayHeroTitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: var(--padding);
-}
-
-.flexRowHero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-.displayHeroTitle img {
-    width: 42vw;
-}
-
-/*Appear JS avec un fade + delay lorsque le personnage est sélectionné */
-.heroComment {
-    display: none;
-}
-
-.heroPicture {
-    width: 20vw;
-}
-
-.wrapper {
-    height: 100vh;
+    width: 25vw;
 }
 
 /*Add Animations*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
     .star {
         width: 8vh;
     }
 
-    ul li:nth-child(1) {
+    #logoAnimation ul li:nth-child(1) {
         position: fixed;
         top: 8%;
         left: 30vw;
     }
 
-    ul li:nth-child(2) {
+    #logoAnimation ul li:nth-child(2) {
         position: fixed;
         top: 20%;
         right: 30vw;
     }
 
-    #titleLogoParallax {
-        background: url(/assets/Title.png) no-repeat fixed;
+    #LogoParallax {
         height: 30vw;
         background-position-y: 5vh;
         background-position-x: 50%;
         background-size: 40vw;
     }
 
+    #contentWithoutParallax {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    .cardHero {
+        width: 32vw;
+        margin: - var(--centering-element-x);
+    }
+
+    .juxtaposition {
+        display: flex;
+        height: 220px;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .juxtaposition img {
+        align-self: center;
+    }
+
+    .heroPicture {
+        transform: translate(0%, 25%);
+    }
+
+    .placeCircles {
+        transform: translate(20%, -75%);
+    }
+
+    .heroPictureCircles {
+        width: 60%;
+    }
+
     button {
-        border: none;
-        border-radius: var(--border-radius);
-    }
-
-    #buttonLouise img,
-    #buttonKarine img {
-        width: 7vw;
-    }
-
-    #buttonLouise,
-    #buttonKarine {
-        border-radius: calc(var(--border-radius)/1.5);
-    }
-
-    .displayHeroTitle img {
-        width: 20vw;
+        display: none;
     }
 
     .heroPicture {
