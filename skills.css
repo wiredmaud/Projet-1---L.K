@@ -135,7 +135,7 @@ body {
 }
 
 .SkillBar {
-    width: 90%;
+    width: 400px;
     height: 30px;
     position: relative;
     background: #cdcdcd;
@@ -149,10 +149,10 @@ body {
 
 #Skill-100 {
     width: 100%;
-    animation: Animate-HTML 3s;
-    -webkit-animation: Animate-HTML 3s;
-    -moz-animation: Animate-HTML 3s;
-    -o-animation: Animate-HTML 3s;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
     height: 30px;
     position: absolute;
     border-radius: 15px;
@@ -202,10 +202,10 @@ body {
 }
 #Skill-90 {
     width: 90%;
-    animation: Animate-HTML 3s;
-    -webkit-animation: Animate-HTML 3s;
-    -moz-animation: Animate-HTML 3s;
-    -o-animation: Animate-HTML 3s;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
     height: 30px;
     position: absolute;
     border-radius: 15px;
