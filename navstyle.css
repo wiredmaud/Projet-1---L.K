@@ -28,17 +28,11 @@ body{
 }
 
 
-section{
-    margin-top:5000px;
-    display: flex;
-    flex-direction: column;
-}
-
 /*Logo*//*Logo*/
 
 nav{
     z-index: 10;
-    position: fixed;
+    position: sticky;
     width:100vw;
     height:10vh;
     background-color:var(--color-palette4);
@@ -69,7 +63,7 @@ nav{
     align-items: center;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: -800px;
     width: 70vw;
     height: 100%;
     margin-top: 0;
@@ -225,4 +219,10 @@ margin: 0 10px;
 }
 .menu li a{
     font-size:15px;
-}}
+}
+
+nav {
+    position: fixed;
+}
+
+}

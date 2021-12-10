@@ -27,7 +27,13 @@ body {
     margin-bottom: 10%;
 } 
 
-#LOUISE, #KARINE {
+#LOUISE {
+    width: auto;
+    margin-top: 100px;
+
+}
+
+#KARINE {
     width: auto;
 
 }
@@ -54,7 +60,7 @@ body {
 .imglouise {
     height: 100px;
     position: absolute;
-    z-index: 10;
+    z-index: 2;
 }
 
 .logocircle {
@@ -107,7 +113,7 @@ body {
 .imgkarine {
     height: 100px;
     position: absolute;
-    z-index: 20;
+    z-index: 2;
 }
 
 #SkillBoxLouise,

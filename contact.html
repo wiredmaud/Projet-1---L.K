@@ -6,21 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navstyle.css" />
+    <link href="footer.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 
 <body class="contact-page">
+    <nav>
+        <div class="nav-logo-container">
+          <img
+            class="logo"
+            src="assets/logolight.png"
+            alt="Louise & Karine logo"
+          />
+        </div>
+  
+        <div class="navlink-container">
+          <input type="checkbox" class="toggle-btn" />
+          <div class="burger-menu"></div>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="experiences.html">Expériences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
     <section class="section">
 
         <div class="title">
-            <h1 class="contact-title">Service client et commercial
-            </h1>
-            <h3 class="contact-subtitle">
+            <h1 class="contact-title">Service client et commercial</h1>
                 <h4 class="contact-title">Louise et Karine, ça marche !</h4>
         </div>
         <div class="contact-form">
-            <img src="" alt="">
             <p class="contact-text">Est-ce que votre site web ressemble à Reddit ? Avez-vous un soucis d'intégration de votre nouveau terminal quantique au reste de votre architecture ? Contactez-nous dès maintenant pour une prise de rendez-vous rapide.</p>
             <p class="contact-text-mini">Pour toute crise pouvant mettre en péril la survie de l'humanité, ous nous déplaçons sous 24h.</p>
             <a href ="#" id="contact-button" class="contact-button">Message</a>
@@ -50,9 +71,9 @@
             <img class="popup-face" src="assets/louisepowerhead.png" alt="Louise">
             <img class= "popup-face" src="assets/karinepowerhead.png" alt="Karine">
             <form action="popup-form" class="popup-form">
-                <input class="contact-details" type="text" placeholder="Nom" required="true">
-                <input class="contact-details" type="text" placeholder="Email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                <textarea class="message-box" placeholder="Votre Requête" required="true"></textarea>
+                <input class="contact-details" type="text" placeholder="Nom">
+                <input class="contact-details" type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <textarea class="message-box" placeholder="Votre Requête" ></textarea>
                 <a href="#" id="submit-button" class="submit-button">Envoyer</a>
             </form>
         </div>
@@ -64,7 +85,132 @@
             <p class="message-sent">Votre message nous a bien été transmis !</p>
         </div>
     </div>
+
+    <footer>
+        <div class="arrowRotateUp" id="arrow">
+          <img src="assets/arrow.png" alt="footer-arrow-up" />
+        </div>
+  
+        <div class="footerDown" id="moveFooter">
+          <p id="footer-contact">Contacts développeurs</p>
+  
+          <div class="footer-coworkers">
+            <ul class="footer-devs">
+              <li class="devName">Estelle Francois</li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/linkedin.png" alt="linkedinEstelle" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Estelle9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.png" alt="githubEstelle" />
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="footer-devs">
+              <li class="devName">Guillaume Nivesse</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/guillaume-nivesse-a0924a61/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/linkedin.png" alt="linkedinGuillaume" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/gunpici"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.png" alt="githubGuillaume" />
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="footer-devs">
+              <li class="devName">Marine Grandcolas</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marine-grandcolas/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/linkedin.png" alt="linkedinMarine" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/MarineGrandcolas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.png" alt="githubMarine" />
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="footer-devs">
+              <li class="devName">Maud Aletti</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maud-aletti-1622572/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/linkedin.png" alt="linkedinMaud" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/wiredmaud/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.png" alt="githubMaud" />
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="footer-devs">
+              <li class="devName">Stephen Bailly</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/stephen-bailly-601809105/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/linkedin.png" alt="linkedinStephen" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/StephenBailly/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.png" alt="githubStephen" />
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div id="credits">
+            Promotion Remote 2 - Wild Code School - Décembre 2021
+          </div>
+        </div>
+      </footer>
+
+
     <script src="contact.js"></script>
+    <script src="footer.js"></script>
 </body>
 
 
