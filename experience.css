@@ -1,0 +1,178 @@
+:root {
+  --color-palette1: rgb(18, 50, 88);
+  --color-palette2: rgb(1, 100, 122);
+  --color-palette3: rgb(140, 3, 41);
+  --color-palette4: rgb(255, 255, 255);
+  --font-main: Lato, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-main);
+  font-size: 14px;
+}
+
+.experiences_container {
+  width: 100%;
+}
+
+.post-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  perspective: 1000px;
+  margin-top: 3em;
+}
+
+.experiences_cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 8px 0 #1b1b31;
+  margin: 1em;
+  width: 80%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.image {
+  height: 100%;
+  opacity: 1;
+}
+
+img {
+  object-fit: cover;
+}
+
+.cards {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5em;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front_card {
+  justify-content: end;
+}
+
+.front_card img {
+  border-radius: 1.5em;
+  width: 100%;
+  height: 100%;
+}
+
+.front_card .image img {
+  object-fit: cover;
+}
+
+.front_card .btn {
+  position: absolute;
+  border: 2px solid var(--color-palette3);
+  border-radius: 1.5em;
+  box-shadow: inset 0 0 0 0 var(--color-palette3);
+  background: transparent;
+  color: var(--color-palette4);
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 2em;
+  padding: 1em 2em;
+}
+
+.front_card .btn:active {
+  border: none;
+  box-shadow: inset 0 0 20px var(--color-palette3),
+    0 0 20px var(--color-palette3);
+  outline-offset: 15px;
+  outline-color: var(--color-palette1);
+}
+
+#btn_two {
+  border: 2px solid var(--color-palette1);
+  box-shadow: inset 0 0 0 0 var(--color-palette1);
+  background-color: rgb(18, 50, 88, 0.7);
+}
+
+#btn_two:active {
+  box-shadow: inset 0 0 10px var(--color-palette1),
+    0 0 20px var(--color-palette1);
+  outline-offset: 10px;
+}
+
+.back_card {
+  background-color: rgb(18, 50, 88, 0.8);
+  color: var(--color-palette4);
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  line-height: 1.5em;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.btn-close:before,
+.btn-close::after {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  width: 2px;
+  height: 32px;
+  border-radius: 0.125em;
+  transform: rotate(45deg);
+  background: currentcolor;
+  content: "";
+  opacity: 1;
+}
+
+.btn-close:after {
+  transform: rotate(-45deg);
+}
+
+.flipcard {
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .experiences_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .post-wrap {
+    width: 420px;
+    height: 500px;
+    margin-top: 0;
+  }
+
+  .btn,
+  .btn-close {
+    cursor: pointer;
+  }
+}
