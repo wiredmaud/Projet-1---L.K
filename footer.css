@@ -24,7 +24,7 @@ body {
 }
 
 footer {
-    z-index: 2;
+    z-index: 100;
     position: fixed;
     width: 100vw;
     bottom: 0;
@@ -36,6 +36,8 @@ footer {
 .arrowRotateUp img {
     width: 10vw;
     filter: drop-shadow(0px 5px 15px rgba(51, 38, 88, 0.8));
+    position: relative;
+    bottom : 15px;
 }
 
 .arrowRotateUp:hover img,
@@ -120,7 +122,7 @@ footer {
 }
 
 #footer-contact {
-    width: 75vw;
+    width: auto;
     font-weight: 500;
     text-transform: uppercase;
     padding: calc(var(--main-element-padding) * 2);
@@ -162,13 +164,13 @@ footer {
 
 @media screen and (min-width: 480px) {
     .arrowRotateUp img {
-        width: 4vw;
+        width: 3vw;
         filter: drop-shadow(0px 5px 15px rgba(51, 38, 88, 0.8));
     }
 
     .arrowRotateUp:hover img,
     .arrowRotateDown:hover img {
-        width: 5vw;
+        width: 4vw;
         transition: 0.3s ease-in-out;
     }
 
@@ -190,6 +192,7 @@ footer {
 
     #footer-contact {
         padding: calc(var(--main-element-padding)/2);
+        text-align: center;
         width: 50%;
     }
 
