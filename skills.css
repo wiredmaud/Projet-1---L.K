@@ -1,0 +1,471 @@
+:root {
+    --color-palette1: rgb(18, 11, 25);
+    --color-palette2: rgb(1, 100, 122);
+    --color-palette3: rgb(140, 3, 41);
+    --color-palette4: rgb(255, 255, 255);
+    --font-main: Lato, sans-serif;
+    --font-size: 20px;
+    --line-height: 2;
+    --margin: 2vh;
+    --linkPadding: 5px;
+    --padding: 42px 0px 42px 0px;
+    --border-radius: 10%;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: var(--color-palette4);
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-logo-container img {
+    width: auto;
+    margin-bottom: 10%;
+} 
+
+#LOUISE, #KARINE {
+    width: auto;
+
+}
+
+#HeaderBoxLouise,
+#HeaderBoxKarine {
+    /* padding-top: 20px;
+    padding-left: 20px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-between;
+    height: 10vh;
+    padding: 10px;
+}
+
+#ImageHeroLouise {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.imglouise {
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+}
+
+.logocircle {
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotation 10s linear infinite;
+    -moz-animation: rotation 10s linear infinite;
+    -ms-animation: rotation 10s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes rotation {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+#ImageHeroKarine {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.imgkarine {
+    height: 100px;
+    position: absolute;
+    z-index: 20;
+}
+
+#SkillBoxLouise,
+#SkillBoxKarine {
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    margin: 0% 20px 20px 20px;
+    border: 5px solid #cdcdcd;
+    padding: 20px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
+    box-shadow: 0 4px 8px 0 var(--color-palette1);
+}
+
+#SkillBoxLouise {
+    background-color: var(--color-palette1);
+}
+
+#SkillBoxKarine {
+    background-color: var(--color-palette3);
+}
+
+.SkillBar {
+    width: 95%;
+    height: 30px;
+    position: relative;
+    background: #cdcdcd;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: #babfc2;
+    box-shadow: inset 7px 7px 7px #3d3e3f,
+        inset -7px -7px 7px #8a8d8d;
+
+}
+
+#Skill-100 {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+#Skill-90 {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 90%
+    }
+}
+
+#Skill-80 {
+    animation: Animate-CSS 3s;
+    -webkit-animation: Animate-CSS 3s;
+    -moz-animation: Animate-CSS 3s;
+    -o-animation: Animate-CSS 3s;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%
+    }
+}
+#Skill-70 {
+    animation: Animate-CSS 3s;
+    -webkit-animation: Animate-CSS 3s;
+    -moz-animation: Animate-CSS 3s;
+    -o-animation: Animate-CSS 3s;
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+#Skill-60 {
+    animation: Animate-jQuery 3s;
+    -webkit-animation: Animate-jQuery 3s;
+    -moz-animation: Animate-jQuery 3s;
+    -o-animation: Animate-jQuery 3s;
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    border-radius: 15px;
+    background: #1b444d;
+    box-shadow: inset -7px 7px 14px #219fbb,
+        inset 7px -7px 14px #035a6d;
+}
+
+@keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@-webkit-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@-moz-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@-o-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 7px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: var(--color-palette4);
+        font-family: 'Lato', sans-serif;
+    }
+
+    .nav-logo-container img {
+        width: auto;
+        margin-bottom: 40%;
+    } 
+    
+    #LOUISE, #KARINE {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    #HeaderBoxLouise,
+    #HeaderBoxKarine {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* display: flex;
+        justify-content:space-around; */
+        height: 10vh;
+        padding: 10px;
+    }
+    
+}
