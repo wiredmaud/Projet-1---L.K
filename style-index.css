@@ -1,0 +1,266 @@
+:root {
+  --total-width-mobile: 80vw;
+  --color-palette1: rgb(18, 11, 25);
+  --color-palette2: rgb(1, 100, 122);
+  --color-palette3: rgb(140, 3, 41);
+  --color-palette4: rgb(255, 255, 255);
+  --font-main: "Lato", sans-serif;
+  --font-size: 20px;
+  --line-height: 2vh;
+  --margin: 2vh;
+  --main-element-padding: 3vw;
+  --margin-y: 2vh 0px 2vh 0px;
+  --centering-element-x: 0vh auto 0vh auto;
+  --border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-palette4);
+  text-decoration: none;
+}
+
+#LogoParallax {
+  background: url(assets/Title.png) no-repeat fixed;
+  z-index: -1;
+  height: 83vw;
+  background-position-y: 12vh;
+  background-size: contain;
+}
+
+/*Stars animation begins*/
+.star {
+  width: 8vw;
+}
+
+#logoAnimation {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: var(--total-width-mobile);
+}
+
+#logoAnimation li {
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: grow 3.3s linear infinite;
+}
+
+@keyframes grow {
+  0%,
+  50%,
+  100% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+/*Stars animation stops*/
+
+#logoAnimation li:nth-child(1) {
+  animation-delay: -1s;
+  position: fixed;
+  top: 16%;
+  left: 12%;
+}
+
+#logoAnimation li:nth-child(2) {
+  animation-delay: -1.9s;
+  position: fixed;
+  top: 27%;
+  right: 10%;
+}
+
+/*Stars animation stops*/
+
+#contentWithoutParallax {
+  background: transparent;
+}
+
+.cardHero {
+  background-color: var(--color-palette1);
+  width: var(--total-width-mobile);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  transition: scale 0.3s ease-in;
+}
+
+.cardHero img {
+  filter: drop-shadow(5px 10px 5px rgb(25, 19, 43, 0.5));
+}
+
+.juxtaposition {
+  display: flex;
+  height: 350px;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.heroPicture {
+  width: 95vw;
+  transform: translate(0%, -5%);
+  z-index: 1;
+}
+
+.placeCircles {
+  transform: translate(0%, -105%);
+}
+
+.heroPictureCircles {
+  width: 90vw;
+  animation: spin 60s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heroComment {
+  color: var(--color-palette4);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.heroPresentationNone {
+  display: none;
+}
+
+.heroPresentationFlex {
+  color: var(--color-palette4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: calc(var(--line-height) * 3);
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 5vh;
+}
+
+.heroPresentationFlex p {
+  width: 80%;
+}
+
+button {
+  width: 100%;
+  border: none;
+  margin: var(--centering-element-x);
+  padding: var(--main-element-padding);
+}
+
+#buttonLouise {
+  background: linear-gradient(
+    190deg,
+    rgb(140, 3, 41, 0.3),
+    rgb(1, 100, 122, 1),
+    rgb(1, 100, 122, 1),
+    rgb(140, 3, 41, 0.3)
+  );
+}
+
+#buttonKarine {
+  background: linear-gradient(
+    190deg,
+    rgb(1, 100, 122, 0.3),
+    rgb(140, 3, 41, 1),
+    rgb(140, 3, 41, 1),
+    rgb(1, 100, 122, 0.4)
+  );
+}
+
+#buttonLouise img,
+#buttonKarine img {
+  width: 25vw;
+}
+
+/*Add Animations*/
+
+@media screen and (min-width: 480px) {
+  .star {
+    width: 8vh;
+  }
+
+  #logoAnimation ul li:nth-child(1) {
+    position: fixed;
+    top: 8vw;
+    left: 60vw;
+  }
+
+  #logoAnimation ul li:nth-child(2) {
+    position: fixed;
+    top: 20vw;
+    right: 60vw;
+  }
+
+  #LogoParallax {
+    height: 27vw;
+    background-position-y: 15vh;
+    background-position-x: 50%;
+    background-size: 30vw;
+  }
+
+  #contentWithoutParallax {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cardHero {
+    width: 40vw;
+  }
+
+  .juxtaposition {
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .juxtaposition img {
+    align-self: center;
+  }
+
+  .heroPicture {
+    transform: translate(0%, 25%);
+  }
+
+  .placeCircles {
+    transform: translate(20%, -75%);
+  }
+
+  .heroPictureCircles {
+    width: 60%;
+  }
+
+  #buttonLouise img,
+  #buttonKarine img {
+    width: 8vw;
+  }
+
+  .heroPicture {
+    width: 15vw;
+    padding: 2vw;
+  }
+
+}
