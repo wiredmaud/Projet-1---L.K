@@ -38,7 +38,7 @@ section{
 /*Logo*//*Logo*/
 
 nav{
-    position: fixe;
+    position: fixed;
     width:100vw;
     height: 10vh;
     background-color:var(--color-palette4);
