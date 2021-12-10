@@ -24,7 +24,7 @@ body {
 }
 
 footer {
-    z-index: 2;
+    z-index: 20;
     position: fixed;
     width: 100vw;
     bottom: 0;
@@ -190,11 +190,11 @@ footer {
 
     #footer-contact {
         padding: calc(var(--main-element-padding)/2);
-        width: 50%;
+        width: auto;
     }
 
     .footer-coworkers {
-        width: 50%;
+        width: 75%;
     }
 
     .footer-devs {
