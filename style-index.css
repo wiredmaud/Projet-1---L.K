@@ -93,7 +93,6 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: var(--border-radius);
-  margin: var(--centering-element-x);
   transition: scale 0.3s ease-in;
 }
 
