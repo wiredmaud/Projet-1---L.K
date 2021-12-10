@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 
@@ -20,30 +21,52 @@
         </div>
         <div class="contact-form">
             <img src="" alt="">
-            <p class="contact-text">Do you have absolute trouble with your project? Our special LK-squad will work
-                directly on-site in case of emergency!</p>
-            <p class="contact-text"> How to get in touch?</p>
-            <button class="contact-button">Pop us!</button>
+            <p class="contact-text">En cas d'extrême urgence, nous nous déplaçons sous 24h* afin </p>
+            <p class="contact-text">*Délai incatif</p>
+            <a href ="#" id="contact-button" class="contact-button">Message</a>
             <div class="social-network">
-                <img class="social-pic" src="https://mybabyfly.com/wp-content/uploads/2019/03/instagram.png"
-                    alt="instagram">
-                <img class="social-pic" src="https://www.freeiconspng.com/uploads/facebook-icon-5.png" alt="facebook">
-                <img class="social-pic"
-                    src="https://cdn.vox-cdn.com/thumbor/1WTVpMp69QbGZ-3uVxNT04NDTjk=/0x56:640x416/1600x900/cdn.vox-cdn.com/assets/2576321/twitter_logo_640.jpg"
-                    alt="twitter">
-                <img class="social-pic"
+                <a href=""><img class="social-pic" src="https://mybabyfly.com/wp-content/uploads/2019/03/instagram.png"
+                    alt="instagram"</a>
+                <a href=""><img class="social-pic"
+                    src="https://pluspng.com/img-png/twitter-png-logo-twitterbird-1528.png"
+                    alt="twitter"></a>
+                <a href=""><img class="social-pic"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"
-                    alt="linkedin">
+                    alt="linkedin"></a>
             </div>
         </div>
 
         <div class="review-container">
-            <article class="box">This was amazeballs</article>
-            <article class="box">Same same</article>
-            <article class="box">"Something in penguin"</article>
+            <article class="review-box">Louise & Karine ont sauvé des millions de personnes à travers le monde en empêchant l'annulation de la St-Patrick !<p class="signature-review">Jean-Philippe Deargmheisce - Dublin du vin, du pain.</p><img class="rating" src="./assets/5-stars.jpg" alt="5-stars"></article>
+            <article class="review-box">Sans l'intervention éclaire de Louise & Karine, tous les restaurants de sushi dans le monde aurait été impacté, provoquant une crise alimentaire mondiale !<p class="signature-review">Hatori Sakana.</p><img class="rating" src="./assets/5-stars.jpg" alt="5-stars"></article>
+            <article class="review-box">On est bien content d'avoir choisi Louise & Karine, grâce à eux, on a pu se concentrer sur l'inversion de la courbe d'émission de gaz à effet de serre, et sauver l'humanité !<p class="signature-review">Dr. Björk Rill</p><img class="rating" src="./assets/5-stars.jpg" alt="5-stars"></article>
         </div>
 
     </section>
+    
+    <div class="bg-modal">
+        <div class="modal-content">
+            <a class="close-form">+</a>
+            <img class="popup-face" src="./assets/louisepowerhead.png" alt="Louise">
+            <img class= "popup-face" src="./assets/karinepowerhead.png" alt="Karine">
+            <form action="popup-form" class="popup-form">
+                <input class="contact-details" type="text" placeholder="Nom">
+                <input class="contact-details" type="text" placeholder="Email">
+                <textarea class="message-box" placeholder="Requête"></textarea>
+                <a href="#" id="submit-button" class="submit-button">Envoyer</a>
+            </form>
+        </div>
+    </div>
+    
+    <div class="bg-modal2">
+        <div class="modal-confirmation">
+            <a class="close-form2">+</a>
+            <p class="message-sent">Votre message nous a bien été transmis !</p>
+        </div>
+    </div>
+    <script src="contact.js"></script>
 </body>
 
+
 </html>
+
