@@ -27,7 +27,7 @@ body {
 }
 
 #LogoParallax {
-  background: url(/assets/Title.png) no-repeat fixed;
+  background: url(assets/Title.png) no-repeat fixed;
   z-index: -1;
   height: 83vw;
   background-position-y: 12vh;
