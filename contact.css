@@ -45,11 +45,6 @@
 
 }
 
-.contact-title {}
-
-.contact-subtitle {}
-
-
 .contact-form {
     background-color: var(--color-palette2);
     border: 2px solid var(--color-palette2);
@@ -104,13 +99,9 @@
 }
 
 .contact-button:hover {
-    /*background-color: var(--color-palette4);
-		color: var(--color-palette2);
-		border: 2px solid var(--color-palette2);*/
         background-color: var(--color-palette3);
-        /*box-shadow: 0px 15px 20px rgba(140, 3, 41, 0.4);*/
         color: #fff;
-        /*transform: translateY(-7px);*/
+        
 
 }
 
@@ -131,15 +122,11 @@
 }
 
 .submit-button:hover {
-    /*background-color: var(--color-palette4);
-		color: var(--color-palette2);
-		border: 2px solid var(--color-palette2);*/
         background-color: var(--color-palette4);
         box-shadow: 0px 15px 20px rgba(140, 3, 41, 0.4);
         color: var(--color-palette1);
         font-weight: 700;
         
-        /*transform: translateY(-7px);*/
 }
 
 
@@ -258,7 +245,6 @@
     
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 
 
 }
 
@@ -345,7 +331,6 @@
         padding-top: 15px;;
         width: 50%;
         height: 50%;
-        display: 
         
     }
 
@@ -370,9 +355,6 @@
     }
     
     .contact-button:hover {
-        /*background-color: var(--color-palette4);
-            color: var(--color-palette2);
-            border: 2px solid var(--color-palette2);*/
             background-color: var(--color-palette3);
             box-shadow: 0px 15px 20px rgba(140, 3, 41, 0.4);
             color: #fff;
@@ -397,13 +379,12 @@
     }
     
     .submit-button:hover {
-        /*background-color: var(--color-palette4);
-            color: var(--color-palette2);
-            border: 2px solid var(--color-palette2);*/
+        
             background-color: var(--color-palette4);
             box-shadow: 0px 15px 20px rgba(18, 50, 88, 0.4);
             color: var(--color-palette1);
             font-weight: 700;
             
             transform: translateY(-7px);
+}
 }
