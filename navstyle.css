@@ -32,7 +32,7 @@ body{
 
 nav{
     z-index: 10;
-    position: sticky;
+    position: static;
     width:100vw;
     height:10vh;
     background-color:var(--color-palette4);
@@ -43,16 +43,18 @@ nav{
     z-index: 10;
 }
 .nav-logo-container{ 
-    display: block;
+   
+    margin-top: auto;
     height: 80%;
     margin-left: 20px;
+    margin-right: 5%;
 }
 
 .logo{
     position: fixed;
     display: block;
     height: 53px;
-}
+} 
     
 /*Navigation Bar*/
 
@@ -71,6 +73,7 @@ nav{
     padding-top: 0;
     transition: 0.3s;
     background-color:var(--color-palette4);
+    z-index: 6;
 }
 
 .menu li {
@@ -222,7 +225,7 @@ margin: 0 10px;
 }
 
 nav {
-    position: fixed;
+    position: ;
 }
 
 }
